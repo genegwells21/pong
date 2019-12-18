@@ -1,3 +1,6 @@
+var player;
+
+
 var dots = []
 var dSize = 10;
 
@@ -15,6 +18,8 @@ function draw() {
   noStroke();
   fill(255);
   drawSquares(); 
+  
+  player.show();
 }
 function drawSquares()  {
   for(let i = 0; i<dots.length; i++)  {
